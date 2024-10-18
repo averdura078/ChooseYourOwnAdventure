@@ -148,9 +148,8 @@ namespace ChooseYourOwnAdventure
                 page = 1;
             }
 
-            //show new message and options
+            //go to code that shows new message and options
             DisplayPage();
-
         }
 
         private void option2Button_Click(object sender, EventArgs e)
@@ -261,12 +260,13 @@ namespace ChooseYourOwnAdventure
                 page = 99;
             }
 
-            //show new message and options
+            //go to code that shows new message and options
             DisplayPage();
         }
 
         public void DisplayPage()
         {
+            //show new message and options
             switch (page)
             {
                 case 1:
