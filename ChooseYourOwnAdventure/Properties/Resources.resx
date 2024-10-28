@@ -124,11 +124,17 @@
   <data name="alienimage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image__NhxPjr__1729610805568_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="aliensound" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Power_Up_Ray-Mike_Koenig-800933783.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="berrybush" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_HClo_vfG_1729695694550_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bigberry" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_xTMscX8O_1729696580142_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="blastoff" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\UFO_Takeoff-Sonidor-1604321570.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="broccoli" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_gkOPRYIP_1729696255393_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,14 +142,23 @@
   <data name="cave/structure" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_p4PSAEqr_1729610230929_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chomp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dragon Bite-SoundBible.com-1625781385.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="cliff" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_8uAUdeEP_1729609251056_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cramp" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_P82VqO_v_1729610182655_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="crash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Smashing-Yuri_Santana-1233262689.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="darkness" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\aOmeYukBSf-CGF0RnxBUGQ.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="die" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tank Firing-SoundBible.com-998264747.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="earth" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\earth.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,8 +166,17 @@
   <data name="end" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\end.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="explosion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shotgun_Blast-Jim_Rogers-1914772763.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="fanfare" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Short_triumphal_fanfare-John_Stracke-815794903 (1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="fate" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\istockphoto-1064086140-612x612.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="footsteps" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Footsteps Walking-SoundBible.com-522653436.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="greenbutton3o" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\greenbutton3-Photoroom-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,11 +184,17 @@
   <data name="illuminated" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_k-tD831n_1729609687933_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="light" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shooting_star-Mike_Koenig-1132888100.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="lonely" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\output (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="purplebutton2o" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\purplebutton2-Photoroom-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="radio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Electricity-SoundBible.com-965518507.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="rampdie" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\a-person-is-on-a-foreign-planet-they-are-bein_AnPaAuy.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,17 +202,29 @@
   <data name="redbutton1o" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\redbutton1-Photoroom-removebg-preview.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="roar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Mountain Lion-SoundBible.com-68904420.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="rocketcrashing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_6x8ezJTN_1729607872434_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rockimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_x5N5f1Kp_1729695172929_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rustling" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Rustle-SoundBible.com-1736422480.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="scaryredmonster" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_i2JyfIwF_1729609919041_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="scifi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\R2D2 Again-SoundBible.com-1304677791 (1).wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="skull" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\HD-wallpaper-skull-black-and-white-skull-artist-black-and-white-digital-art-monochrome.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="slip" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Banana Peel Slip Zip-SoundBible.com-803276918.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="spaceshuttle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\output.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,7 +232,16 @@
   <data name="storm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_yyjx-lIt_1729694102862_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="thud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Large Thump Or Bump-SoundBible.com-395560493.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="thunderlightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Thunder-Mark_DiAngelo-2147265856.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="volcano" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_fSufRHQ-_1729693858798_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="whoosh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\flyby-Conor-1500306612.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

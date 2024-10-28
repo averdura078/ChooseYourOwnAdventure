@@ -176,5 +176,59 @@
   <ItemGroup>
     <None Include="Resources\redbutton1-Photoroom-removebg-preview.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Smashing-Yuri_Santana-1233262689.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R2D2 Again-SoundBible.com-1304677791.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Large Thump Or Bump-SoundBible.com-395560493.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\R2D2 Again-SoundBible.com-1304677791 %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shooting_star-Mike_Koenig-1132888100.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mountain Lion-SoundBible.com-68904420.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Footsteps Walking-SoundBible.com-522653436.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tank Firing-SoundBible.com-998264747.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Power_Up_Ray-Mike_Koenig-800933783.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Shotgun_Blast-Jim_Rogers-1914772763.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thunder-Mark_DiAngelo-2147265856.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Banana Peel Slip Zip-SoundBible.com-803276918.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Short_triumphal_fanfare-John_Stracke-815794903 %281%29.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rustle-SoundBible.com-1736422480.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Electricity-SoundBible.com-965518507.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dragon Bite-SoundBible.com-1625781385.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UFO_Takeoff-Sonidor-1604321570.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flyby-Conor-1500306612.wav" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
