@@ -65,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -78,6 +79,102 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_6x8ezJTN_1729607872434_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aOmeYukBSf-CGF0RnxBUGQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_8uAUdeEP_1729609251056_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_k-tD831n_1729609687933_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_i2JyfIwF_1729609919041_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_p4PSAEqr_1729610230929_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HD-wallpaper-skull-black-and-white-skull-artist-black-and-white-digital-art-monochrome.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_8Ua3LRkt_1729610829652_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_fSufRHQ-_1729693858798_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_yyjx-lIt_1729694102862_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\istockphoto-1064086140-612x612.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_x5N5f1Kp_1729695172929_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_HClo_vfG_1729695694550_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lM9BTPv2TdueeQWf173l8w.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_gkOPRYIP_1729696255393_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_P82VqO_v_1729610182655_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image_xTMscX8O_1729696580142_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\earth.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bEm1n2mwTX2TVRFYc1pAlQ.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openart-image__NhxPjr__1729610805568_raw.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\output %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\a-person-is-on-a-foreign-planet-they-are-bein_AnPaAuy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\end.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vecteezy_ai-generated-planet-on-transparent-background-png-image_34950615 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\planet1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redbutton1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\purplebutton2-Photoroom-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\greenbutton3-Photoroom-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redbutton1-Photoroom-removebg-preview.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
