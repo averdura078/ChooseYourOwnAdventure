@@ -81,7 +81,7 @@
             // 
             // moretexttimer
             // 
-            this.moretexttimer.Interval = 2000;
+            this.moretexttimer.Interval = 2500;
             this.moretexttimer.Tick += new System.EventHandler(this.moretexttimer_Tick);
             // 
             // imageBox

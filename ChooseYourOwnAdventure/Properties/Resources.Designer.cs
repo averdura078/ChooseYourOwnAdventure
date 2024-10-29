@@ -227,9 +227,9 @@ namespace ChooseYourOwnAdventure.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream fanfare_2 {
+        internal static System.IO.UnmanagedMemoryStream fanfarecropped {
             get {
-                return ResourceManager.GetStream("fanfare_2", resourceCulture);
+                return ResourceManager.GetStream("fanfarecropped", resourceCulture);
             }
         }
         

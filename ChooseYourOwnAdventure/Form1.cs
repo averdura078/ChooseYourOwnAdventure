@@ -77,6 +77,8 @@ namespace ChooseYourOwnAdventure
             }
             else if (page == 12)
             {
+                //RANDOM ENCOUNTER
+
                 //get a random number
                 Random randGen = new Random();
                 int randomValue = randGen.Next(1, 101);
@@ -130,19 +132,7 @@ namespace ChooseYourOwnAdventure
             {
                 page = 24;
             }
-            else if (page == 23)
-            {
-                page = 1;
-            }
-            else if (page == 24)
-            {
-                page = 1;
-            }
-            else if (page == 25)
-            {
-                page = 1;
-            }
-            else if (page == 26)
+            else if (page == 23 || page == 24 || page == 25 || page == 26)
             {
                 page = 1;
             }
@@ -266,7 +256,7 @@ namespace ChooseYourOwnAdventure
         private void option3Button_Click(object sender, EventArgs e)
         {
             //check current page, then flip to page when option 3 is clicked
-            if (page == 17) 
+            if (page == 17)
             {
                 page = 20;
             }
@@ -287,14 +277,10 @@ namespace ChooseYourOwnAdventure
                 case 1:
                     //change background and text colour
                     this.BackColor = Color.GreenYellow;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.rocketcrashing;
@@ -312,14 +298,10 @@ namespace ChooseYourOwnAdventure
                 case 2:
                     //change background and text colour
                     this.BackColor = Color.Black;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    whitetext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.darkness;
@@ -337,14 +319,10 @@ namespace ChooseYourOwnAdventure
                 case 3:
                     //change background and text colour
                     this.BackColor = Color.CadetBlue;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.cliff;
@@ -361,11 +339,11 @@ namespace ChooseYourOwnAdventure
                     break;
                 case 4:
                     //change background and text colour
-                    this.BackColor = Color.Yellow;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    this.BackColor = Color.Gold;
+                    blacktext();
+
+                    //change button 3 visibility based on whether or not there is an option 3
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.illuminated;
@@ -374,12 +352,8 @@ namespace ChooseYourOwnAdventure
                     soundPlayer = new SoundPlayer(Properties.Resources.light);
                     soundPlayer.Play();
 
-                    //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
-
                     //display message
-                    outputLabel.Text = "It's 6 hours later and the foreign planet you're on is now illuminated by a nearby star. Wear protective gear?";
+                    outputLabel.Text = "It's 6 hours later and the foreign planet you're on is now illuminated by a nearby star. Would you like to wear protective gear? Choose wisely.";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
 
@@ -387,14 +361,10 @@ namespace ChooseYourOwnAdventure
                 case 5:
                     //change background and text colour
                     this.BackColor = Color.Red;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    whitetext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.scaryredmonster;
@@ -412,14 +382,10 @@ namespace ChooseYourOwnAdventure
                 case 6:
                     //change background and text colour
                     this.BackColor = Color.Navy;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    whitetext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.cave_structure;
@@ -437,14 +403,10 @@ namespace ChooseYourOwnAdventure
                 case 7:
                     //change background and text colour
                     this.BackColor = Color.OliveDrab;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    whitetext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.skull;
@@ -454,7 +416,7 @@ namespace ChooseYourOwnAdventure
                     soundPlayer.Play();
 
                     //display message
-                    outputLabel.Text = "You die of carbon monoxide poisoning. Play again?";
+                    outputLabel.Text = "You die of carbon monoxide poisoning. Your lungs explode. Play again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
 
@@ -462,14 +424,10 @@ namespace ChooseYourOwnAdventure
                 case 8:
                     //change background and text colour
                     this.BackColor = Color.LimeGreen;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.alienimage;
@@ -487,14 +445,10 @@ namespace ChooseYourOwnAdventure
                 case 9:
                     //change background and text colour
                     this.BackColor = Color.Orange;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.volcano;
@@ -512,14 +466,10 @@ namespace ChooseYourOwnAdventure
                 case 10:
                     //change background and text colour
                     this.BackColor = Color.LightBlue;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.storm;
@@ -537,14 +487,10 @@ namespace ChooseYourOwnAdventure
                 case 11:
                     //change background and text colour
                     this.BackColor = Color.Black;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    whitetext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.storm;
@@ -562,14 +508,10 @@ namespace ChooseYourOwnAdventure
                 case 12:
                     //change background and text colour
                     this.BackColor = Color.Purple;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    whitetext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.fate;
@@ -587,14 +529,10 @@ namespace ChooseYourOwnAdventure
                 case 13:
                     //change background and text colour
                     this.BackColor = Color.LimeGreen;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.skull;
@@ -612,14 +550,10 @@ namespace ChooseYourOwnAdventure
                 case 14:
                     //change background and text colour
                     this.BackColor = Color.Gray;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.skull;
@@ -636,15 +570,11 @@ namespace ChooseYourOwnAdventure
                     break;
                 case 15:
                     //change background and text colour
-                    this.BackColor = Color.DarkGray;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    this.BackColor = Color.Firebrick;
+                    whitetext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.skull;
@@ -661,31 +591,29 @@ namespace ChooseYourOwnAdventure
                     break;
                 case 16:
                     //change background and text colour
-                    this.BackColor = Color.Pink;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    this.BackColor = Color.SandyBrown;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.rockimage;
 
-                    //display message and disable buttons
+                    //display first half of message and hide & disable buttons
                     outputLabel.Text = "You survive!";
+                    //#1
                     option1Label.Text = "";
-                    option2Label.Text = "";
                     option1Button.Visible = false;
-                    option2Button.Visible = false;
                     option1Button.Enabled = false;
+                    //#2
+                    option2Label.Text = "";
+                    option2Button.Visible = false;
                     option2Button.Enabled = false;
                     Refresh();
 
                     //play sound effect(s)
-                    soundPlayer = new SoundPlayer(Properties.Resources.fanfare_2);
+                    soundPlayer = new SoundPlayer(Properties.Resources.fanfarecropped);
                     soundPlayer.Play();
 
                     //display the rest of the message
@@ -695,14 +623,10 @@ namespace ChooseYourOwnAdventure
                 case 17:
                     //change background and text colour
                     this.BackColor = Color.Salmon;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = true;
-                    option3Label.Visible = true;
+                    showb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.berrybush;
@@ -721,14 +645,10 @@ namespace ChooseYourOwnAdventure
                 case 18:
                     //change background and text colour
                     this.BackColor = Color.LightSeaGreen;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.skull;
@@ -746,14 +666,10 @@ namespace ChooseYourOwnAdventure
                 case 19:
                     //change background and text colour
                     this.BackColor = Color.LightBlue;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.earth;
@@ -771,14 +687,10 @@ namespace ChooseYourOwnAdventure
                 case 20:
                     //change background and text colour
                     this.BackColor = Color.Purple;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    whitetext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.cramp;
@@ -796,14 +708,10 @@ namespace ChooseYourOwnAdventure
                 case 21:
                     //change background and text colour
                     this.BackColor = Color.GreenYellow;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.bigberry;
@@ -821,14 +729,10 @@ namespace ChooseYourOwnAdventure
                 case 22:
                     //change background and text colour
                     this.BackColor = Color.Plum;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = true;
-                    option3Label.Visible = true;
+                    showb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.spaceshuttle;
@@ -847,14 +751,10 @@ namespace ChooseYourOwnAdventure
                 case 23:
                     //change background and text colour
                     this.BackColor = Color.DarkGreen;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    whitetext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.skull;
@@ -872,14 +772,10 @@ namespace ChooseYourOwnAdventure
                 case 24:
                     //change background and text colour
                     this.BackColor = Color.PaleGreen;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.alienimage2;
@@ -889,7 +785,7 @@ namespace ChooseYourOwnAdventure
                     soundPlayer.Play();
 
                     //display message
-                    outputLabel.Text = "You are rescued! You say goodbye to your alien friend and blast off back to Earth. You win! Play again?";
+                    outputLabel.Text = "You are rescued! You say goodbye to your alien friend and blast off back to Earth. \n\nYou win! Play again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
 
@@ -897,14 +793,10 @@ namespace ChooseYourOwnAdventure
                 case 25:
                     //change background and text colour
                     this.BackColor = Color.Orange;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.lonely;
@@ -922,14 +814,10 @@ namespace ChooseYourOwnAdventure
                 case 26:
                     //change background and text colour
                     this.BackColor = Color.Orange;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    blacktext();
 
                     //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
+                    hideb3();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.rampdie;
@@ -947,10 +835,7 @@ namespace ChooseYourOwnAdventure
                 case 99:
                     //change background and text colour
                     this.BackColor = Color.Black;
-                    outputLabel.ForeColor = Color.White;
-                    option1Label.ForeColor = Color.White;
-                    option2Label.ForeColor = Color.White;
-                    option3Label.ForeColor = Color.White;
+                    whitetext();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.end;
@@ -961,6 +846,8 @@ namespace ChooseYourOwnAdventure
 
                     //display message
                     outputLabel.Text = "Thank you for playing. Play again next time... \n\nIF YOU DARE!";
+                    
+                    //get rid of buttons and options
                     option1Label.Text = "";
                     option2Label.Text = "";
                     option3Label.Text = "";
@@ -968,6 +855,8 @@ namespace ChooseYourOwnAdventure
                     option2Button.Visible = false;
                     option3Button.Visible = false;
                     Refresh();
+
+                    //wait 3 seconds
                     Thread.Sleep(3000);
 
                     //close program
@@ -979,14 +868,54 @@ namespace ChooseYourOwnAdventure
 
         private void moretexttimer_Tick(object sender, EventArgs e)
         {
+            //display the rest of the case 16 message after 2.5 seconds
             outputLabel.Text += "\n\n...But you're starving. The aliens eat rocks. Do you eat the rocks too or find another meal?";
             option1Label.Text = "Find another meal";
             option2Label.Text = "Eat the rocks";
+
+            //show & enable buttons
             option1Button.Visible = true;
-            option2Button.Visible = true;
             option1Button.Enabled = true;
+            
+            option2Button.Visible = true;
             option2Button.Enabled = true;
+
+            //disable timer so it cannot run again
+            //(which would change the text to the text above no matter what every 2.5 seconds)
             moretexttimer.Enabled = false;
         }
+
+        public void blacktext()
+        {
+            //change all text to black
+            outputLabel.ForeColor = Color.Black;
+            option1Label.ForeColor = Color.Black;
+            option2Label.ForeColor = Color.Black;
+            option3Label.ForeColor = Color.Black;
+        }
+
+        public void whitetext()
+        {
+            //change all text to white
+            outputLabel.ForeColor = Color.White;
+            option1Label.ForeColor = Color.White;
+            option2Label.ForeColor = Color.White;
+            option3Label.ForeColor = Color.White;
+        }
+
+        public void hideb3()
+        {
+            //hide button 3
+            option3Button.Visible = false;
+            option3Label.Visible = false;
+        }
+
+        public void showb3()
+        {
+            //show button 3
+            option3Button.Visible = true;
+            option3Label.Visible = true;
+        }
+
     }
 }
