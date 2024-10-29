@@ -305,7 +305,7 @@ namespace ChooseYourOwnAdventure
 
                     //display message
                     outputLabel.Text = "You just crash landed on a foreign planet. Your spaceship is on fire. Do you attempt to extinguish the fire, or run away into an unknown environment?";
-                    option1Label.Text = "Extingish raging fire";
+                    option1Label.Text = "Extinguish raging fire";
                     option2Label.Text = "Run into unknown environment";
 
                     break;

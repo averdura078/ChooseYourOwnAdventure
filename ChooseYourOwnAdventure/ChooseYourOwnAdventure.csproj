@@ -237,5 +237,8 @@
   <ItemGroup>
     <None Include="Resources\descending_craft-Sonidor-991848481 %281%29.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rocketicon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

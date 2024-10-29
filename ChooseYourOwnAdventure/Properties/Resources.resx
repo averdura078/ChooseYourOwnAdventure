@@ -208,6 +208,9 @@
   <data name="rocketcrashing" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_6x8ezJTN_1729607872434_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rocketicon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rocketicon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="rockimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\openart-image_x5N5f1Kp_1729695172929_raw.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

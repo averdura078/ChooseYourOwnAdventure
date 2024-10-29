@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.outputLabel = new System.Windows.Forms.Label();
             this.option1Label = new System.Windows.Forms.Label();
             this.option2Label = new System.Windows.Forms.Label();
             this.option3Label = new System.Windows.Forms.Label();
+            this.moretexttimer = new System.Windows.Forms.Timer(this.components);
             this.imageBox = new System.Windows.Forms.PictureBox();
             this.option3Button = new System.Windows.Forms.Button();
             this.option2Button = new System.Windows.Forms.Button();
             this.option1Button = new System.Windows.Forms.Button();
-            this.moretexttimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -77,6 +78,11 @@
             this.option3Label.Size = new System.Drawing.Size(374, 22);
             this.option3Label.TabIndex = 6;
             this.option3Label.Text = "option3Label";
+            // 
+            // moretexttimer
+            // 
+            this.moretexttimer.Interval = 2000;
+            this.moretexttimer.Tick += new System.EventHandler(this.moretexttimer_Tick);
             // 
             // imageBox
             // 
@@ -136,11 +142,6 @@
             this.option1Button.UseVisualStyleBackColor = true;
             this.option1Button.Click += new System.EventHandler(this.option1Button_Click);
             // 
-            // moretexttimer
-            // 
-            this.moretexttimer.Interval = 2000;
-            this.moretexttimer.Tick += new System.EventHandler(this.moretexttimer_Tick);
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -154,6 +155,7 @@
             this.Controls.Add(this.option2Button);
             this.Controls.Add(this.option1Button);
             this.Controls.Add(this.outputLabel);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Choose Your Own Adventure";
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).EndInit();
