@@ -227,9 +227,9 @@ namespace ChooseYourOwnAdventure.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
-        internal static System.IO.UnmanagedMemoryStream fanfare {
+        internal static System.IO.UnmanagedMemoryStream fanfare_2 {
             get {
-                return ResourceManager.GetStream("fanfare", resourceCulture);
+                return ResourceManager.GetStream("fanfare_2", resourceCulture);
             }
         }
         
@@ -441,6 +441,15 @@ namespace ChooseYourOwnAdventure.Properties {
         internal static System.IO.UnmanagedMemoryStream thunderlightning {
             get {
                 return ResourceManager.GetStream("thunderlightning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream ufolanding {
+            get {
+                return ResourceManager.GetStream("ufolanding", resourceCulture);
             }
         }
         

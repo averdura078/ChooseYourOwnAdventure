@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.outputLabel = new System.Windows.Forms.Label();
             this.option1Label = new System.Windows.Forms.Label();
             this.option2Label = new System.Windows.Forms.Label();
@@ -36,6 +37,7 @@
             this.option3Button = new System.Windows.Forms.Button();
             this.option2Button = new System.Windows.Forms.Button();
             this.option1Button = new System.Windows.Forms.Button();
+            this.moretexttimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.imageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,7 +100,9 @@
             this.option3Button.Name = "option3Button";
             this.option3Button.Size = new System.Drawing.Size(34, 29);
             this.option3Button.TabIndex = 3;
+            this.option3Button.TabStop = false;
             this.option3Button.UseVisualStyleBackColor = true;
+            this.option3Button.Click += new System.EventHandler(this.option3Button_Click);
             // 
             // option2Button
             // 
@@ -112,6 +116,7 @@
             this.option2Button.Name = "option2Button";
             this.option2Button.Size = new System.Drawing.Size(34, 28);
             this.option2Button.TabIndex = 2;
+            this.option2Button.TabStop = false;
             this.option2Button.UseVisualStyleBackColor = true;
             this.option2Button.Click += new System.EventHandler(this.option2Button_Click);
             // 
@@ -123,12 +128,18 @@
             this.option1Button.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.option1Button.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.option1Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.option1Button.Location = new System.Drawing.Point(12, 351);
+            this.option1Button.Location = new System.Drawing.Point(12, 352);
             this.option1Button.Name = "option1Button";
             this.option1Button.Size = new System.Drawing.Size(34, 29);
             this.option1Button.TabIndex = 1;
+            this.option1Button.TabStop = false;
             this.option1Button.UseVisualStyleBackColor = true;
             this.option1Button.Click += new System.EventHandler(this.option1Button_Click);
+            // 
+            // moretexttimer
+            // 
+            this.moretexttimer.Interval = 2000;
+            this.moretexttimer.Tick += new System.EventHandler(this.moretexttimer_Tick);
             // 
             // Form1
             // 
@@ -160,6 +171,7 @@
         private System.Windows.Forms.Label option2Label;
         private System.Windows.Forms.Label option3Label;
         private System.Windows.Forms.PictureBox imageBox;
+        private System.Windows.Forms.Timer moretexttimer;
     }
 }
 

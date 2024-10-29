@@ -263,6 +263,22 @@ namespace ChooseYourOwnAdventure
             DisplayPage();
         }
 
+        private void option3Button_Click(object sender, EventArgs e)
+        {
+            //check current page, then flip to page when option 3 is clicked
+            if (page == 17) 
+            {
+                page = 20;
+            }
+            else if (page == 22)
+            {
+                page = 25;
+            }
+
+            //go to code that shows new message and options
+            DisplayPage();
+        }
+
         public void DisplayPage()
         {
             //show new message and options
@@ -486,7 +502,7 @@ namespace ChooseYourOwnAdventure
                     //play sound effect(s)
                     soundPlayer = new SoundPlayer(Properties.Resources.explosion);
                     soundPlayer.Play();
-                    
+
                     //display message
                     outputLabel.Text = "Oops! The cave was actually the mouth of a fiery volcano. You were scorched. Play again?";
                     option1Label.Text = "Yes";
@@ -511,7 +527,7 @@ namespace ChooseYourOwnAdventure
                     //play sound effect(s)
                     soundPlayer = new SoundPlayer(Properties.Resources.thunderlightning);
                     soundPlayer.Play();
-                   
+
                     //display message
                     outputLabel.Text = "Yay! You make friends with the alien. It warns you of an acid rain storm incoming... run to a far away shelter with the alien?";
                     option1Label.Text = "Yes";
@@ -658,25 +674,22 @@ namespace ChooseYourOwnAdventure
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.rockimage;
 
-                    //play sound effect(s)
-                    soundPlayer = new SoundPlayer(Properties.Resources.fanfare);
-                    soundPlayer.Play();
-
-                    //display message
-                    option1Button.Enabled = false;
-                    option2Button.Enabled = false;
+                    //display message and disable buttons
                     outputLabel.Text = "You survive!";
                     option1Label.Text = "";
                     option2Label.Text = "";
+                    option1Button.Visible = false;
+                    option2Button.Visible = false;
+                    option1Button.Enabled = false;
+                    option2Button.Enabled = false;
                     Refresh();
 
-                    //wait, then display the rest of the message
-                    Thread.Sleep(4000);
-                    option1Button.Enabled = true;
-                    option2Button.Enabled = true;
-                    outputLabel.Text += "\n\n...But you're starving. The aliens eat rocks. Do you eat the rocks too or find another meal?";
-                    option1Label.Text = "Find another meal";
-                    option2Label.Text = "Eat the rocks";
+                    //play sound effect(s)
+                    soundPlayer = new SoundPlayer(Properties.Resources.fanfare_2);
+                    soundPlayer.Play();
+
+                    //display the rest of the message
+                    moretexttimer.Enabled = true;
 
                     break;
                 case 17:
@@ -707,7 +720,7 @@ namespace ChooseYourOwnAdventure
                     break;
                 case 18:
                     //change background and text colour
-                    this.BackColor = Color.GreenYellow;
+                    this.BackColor = Color.LightSeaGreen;
                     outputLabel.ForeColor = Color.Black;
                     option1Label.ForeColor = Color.Black;
                     option2Label.ForeColor = Color.Black;
@@ -732,7 +745,7 @@ namespace ChooseYourOwnAdventure
                     break;
                 case 19:
                     //change background and text colour
-                    this.BackColor = Color.GreenYellow;
+                    this.BackColor = Color.LightBlue;
                     outputLabel.ForeColor = Color.Black;
                     option1Label.ForeColor = Color.Black;
                     option2Label.ForeColor = Color.Black;
@@ -757,11 +770,11 @@ namespace ChooseYourOwnAdventure
                     break;
                 case 20:
                     //change background and text colour
-                    this.BackColor = Color.GreenYellow;
-                    outputLabel.ForeColor = Color.Black;
-                    option1Label.ForeColor = Color.Black;
-                    option2Label.ForeColor = Color.Black;
-                    option3Label.ForeColor = Color.Black;
+                    this.BackColor = Color.Purple;
+                    outputLabel.ForeColor = Color.White;
+                    option1Label.ForeColor = Color.White;
+                    option2Label.ForeColor = Color.White;
+                    option3Label.ForeColor = Color.White;
 
                     //change button 3 visibility based on whether or not there is an option 3
                     option3Button.Visible = false;
@@ -775,7 +788,7 @@ namespace ChooseYourOwnAdventure
                     soundPlayer.Play();
 
                     //display message   
-                    outputLabel.Text = "You are too slow. You ate too many berries and get a stomach cramp. You die of fatigue. Play again?";
+                    outputLabel.Text = "You are too slow. You ate too many berries and get a stomach cramp. You slow down, stop walking, and die of fatigue. Play again?";
                     option1Label.Text = "Yes";
                     option2Label.Text = "No";
 
@@ -821,7 +834,7 @@ namespace ChooseYourOwnAdventure
                     imageBox.BackgroundImage = Properties.Resources.spaceshuttle;
 
                     //play sound effect(s)
-                    soundPlayer = new SoundPlayer(Properties.Resources.blastoff);
+                    soundPlayer = new SoundPlayer(Properties.Resources.ufolanding);
                     soundPlayer.Play();
 
                     //display message
@@ -883,7 +896,7 @@ namespace ChooseYourOwnAdventure
                     break;
                 case 25:
                     //change background and text colour
-                    this.BackColor = Color.GreenYellow;
+                    this.BackColor = Color.Orange;
                     outputLabel.ForeColor = Color.Black;
                     option1Label.ForeColor = Color.Black;
                     option2Label.ForeColor = Color.Black;
@@ -927,8 +940,8 @@ namespace ChooseYourOwnAdventure
 
                     //display message
                     outputLabel.Text = "You attempt to climb up the ramp, but your hesitation causes you to fall to your death. You die upon impact. Play again?";
-                    option1Label.Text = "";
-                    option2Label.Text = "";
+                    option1Label.Text = "Yes";
+                    option2Label.Text = "No";
 
                     break;
                 case 99:
@@ -939,10 +952,6 @@ namespace ChooseYourOwnAdventure
                     option2Label.ForeColor = Color.White;
                     option3Label.ForeColor = Color.White;
 
-                    //change button 3 visibility based on whether or not there is an option 3
-                    option3Button.Visible = false;
-                    option3Label.Visible = false;
-
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.end;
 
@@ -951,11 +960,16 @@ namespace ChooseYourOwnAdventure
                     soundPlayer.Play();
 
                     //display message
-                    outputLabel.Text = "Thank you for playing. Play again next time... IF YOU DARE!";
+                    outputLabel.Text = "Thank you for playing. Play again next time... \n\nIF YOU DARE!";
                     option1Label.Text = "";
                     option2Label.Text = "";
+                    option3Label.Text = "";
+                    option1Button.Visible = false;
+                    option2Button.Visible = false;
+                    option3Button.Visible = false;
                     Refresh();
                     Thread.Sleep(3000);
+
                     //close program
                     Close();
                     Application.Exit();
@@ -963,6 +977,16 @@ namespace ChooseYourOwnAdventure
             }
         }
 
-
+        private void moretexttimer_Tick(object sender, EventArgs e)
+        {
+            outputLabel.Text += "\n\n...But you're starving. The aliens eat rocks. Do you eat the rocks too or find another meal?";
+            option1Label.Text = "Find another meal";
+            option2Label.Text = "Eat the rocks";
+            option1Button.Visible = true;
+            option2Button.Visible = true;
+            option1Button.Enabled = true;
+            option2Button.Enabled = true;
+            moretexttimer.Enabled = false;
+        }
     }
 }
