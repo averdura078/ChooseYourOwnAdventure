@@ -93,6 +93,7 @@
             this.imageBox.Size = new System.Drawing.Size(414, 256);
             this.imageBox.TabIndex = 8;
             this.imageBox.TabStop = false;
+            this.imageBox.Click += new System.EventHandler(this.imageBox_Click);
             // 
             // option3Button
             // 

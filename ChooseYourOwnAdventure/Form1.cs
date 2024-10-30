@@ -39,41 +39,21 @@ namespace ChooseYourOwnAdventure
             {
                 page = 4;
             }
-            else if (page == 3)
-            {
-                page = 1;
-            }
             else if (page == 4)
             {
                 page = 6;
-            }
-            else if (page == 5)
-            {
-                page = 1;
             }
             else if (page == 6)
             {
                 page = 8;
             }
-            else if (page == 7)
-            {
-                page = 1;
-            }
             else if (page == 8)
             {
                 page = 10;
             }
-            else if (page == 9)
-            {
-                page = 1;
-            }
             else if (page == 10)
             {
                 page = 12;
-            }
-            else if (page == 11)
-            {
-                page = 1;
             }
             else if (page == 12)
             {
@@ -92,18 +72,6 @@ namespace ChooseYourOwnAdventure
                     page = 16;
                 }
             }
-            else if (page == 13)
-            {
-                page = 1;
-            }
-            else if (page == 14)
-            {
-                page = 1;
-            }
-            else if (page == 15)
-            {
-                page = 1;
-            }
             else if (page == 16)
             {
                 page = 17;
@@ -112,28 +80,17 @@ namespace ChooseYourOwnAdventure
             {
                 page = 19;
             }
-            else if (page == 18)
-            {
-                page = 1;
-            }
             else if (page == 19)
             {
                 page = 22;
-            }
-            else if (page == 20)
-            {
-                page = 1;
-            }
-            else if (page == 21)
-            {
-                page = 1;
             }
             else if (page == 22)
             {
                 page = 24;
             }
-            else if (page == 23 || page == 24 || page == 25 || page == 26)
+            else if (page == 3 || page == 5 || page == 7 || page == 9 || page == 11 || page == 13 || page == 14 || page == 15 || page == 18 || page == 20 || page == 21 || page == 23 || page == 24 || page == 25 || page == 26)
             {
+                //restart game
                 page = 1;
             }
 
@@ -152,57 +109,25 @@ namespace ChooseYourOwnAdventure
             {
                 page = 5;
             }
-            else if (page == 3)
-            {
-                page = 99;
-            }
             else if (page == 4)
             {
                 page = 7;
-            }
-            else if (page == 5)
-            {
-                page = 99;
             }
             else if (page == 6)
             {
                 page = 9;
             }
-            else if (page == 7)
-            {
-                page = 99;
-            }
             else if (page == 8)
             {
                 page = 11;
-            }
-            else if (page == 9)
-            {
-                page = 99;
             }
             else if (page == 10)
             {
                 page = 13;
             }
-            else if (page == 11)
-            {
-                page = 99;
-            }
             else if (page == 12)
             {
                 page = 14;
-            }
-            else if (page == 13)
-            {
-                page = 99;
-            }
-            else if (page == 14)
-            {
-                page = 99;
-            }
-            else if (page == 15)
-            {
-                page = 99;
             }
             else if (page == 16)
             {
@@ -212,40 +137,17 @@ namespace ChooseYourOwnAdventure
             {
                 page = 21;
             }
-            else if (page == 18)
-            {
-                page = 99;
-            }
             else if (page == 19)
             {
                 page = 23;
-            }
-            else if (page == 20)
-            {
-                page = 99;
-            }
-            else if (page == 21)
-            {
-                page = 99;
             }
             else if (page == 22)
             {
                 page = 26;
             }
-            else if (page == 23)
+            else if (page == 3 || page == 5 || page == 7 || page == 9 || page == 11 || page == 13 || page == 14 || page == 15 || page == 18 || page == 20 || page == 21 || page == 23 || page == 24 || page == 25 || page == 26)
             {
-                page = 99;
-            }
-            else if (page == 24)
-            {
-                page = 99;
-            }
-            else if (page == 25)
-            {
-                page = 99;
-            }
-            else if (page == 26)
-            {
+                //end game
                 page = 99;
             }
 
@@ -274,10 +176,10 @@ namespace ChooseYourOwnAdventure
             //show new message and options
             switch (page)
             {
-                case 1:
+                case 1: //start/restart game
                     //change background and text colour
                     this.BackColor = Color.GreenYellow;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -298,7 +200,7 @@ namespace ChooseYourOwnAdventure
                 case 2:
                     //change background and text colour
                     this.BackColor = Color.Black;
-                    whitetext();
+                    whiteText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -319,7 +221,7 @@ namespace ChooseYourOwnAdventure
                 case 3:
                     //change background and text colour
                     this.BackColor = Color.CadetBlue;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -340,7 +242,7 @@ namespace ChooseYourOwnAdventure
                 case 4:
                     //change background and text colour
                     this.BackColor = Color.Gold;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -361,7 +263,7 @@ namespace ChooseYourOwnAdventure
                 case 5:
                     //change background and text colour
                     this.BackColor = Color.Red;
-                    whitetext();
+                    whiteText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -382,7 +284,7 @@ namespace ChooseYourOwnAdventure
                 case 6:
                     //change background and text colour
                     this.BackColor = Color.Navy;
-                    whitetext();
+                    whiteText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -403,7 +305,7 @@ namespace ChooseYourOwnAdventure
                 case 7:
                     //change background and text colour
                     this.BackColor = Color.OliveDrab;
-                    whitetext();
+                    whiteText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -424,7 +326,7 @@ namespace ChooseYourOwnAdventure
                 case 8:
                     //change background and text colour
                     this.BackColor = Color.LimeGreen;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -445,7 +347,7 @@ namespace ChooseYourOwnAdventure
                 case 9:
                     //change background and text colour
                     this.BackColor = Color.Orange;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -466,7 +368,7 @@ namespace ChooseYourOwnAdventure
                 case 10:
                     //change background and text colour
                     this.BackColor = Color.LightBlue;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -487,7 +389,7 @@ namespace ChooseYourOwnAdventure
                 case 11:
                     //change background and text colour
                     this.BackColor = Color.Black;
-                    whitetext();
+                    whiteText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -508,7 +410,7 @@ namespace ChooseYourOwnAdventure
                 case 12:
                     //change background and text colour
                     this.BackColor = Color.Purple;
-                    whitetext();
+                    whiteText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -529,7 +431,7 @@ namespace ChooseYourOwnAdventure
                 case 13:
                     //change background and text colour
                     this.BackColor = Color.LimeGreen;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -550,7 +452,7 @@ namespace ChooseYourOwnAdventure
                 case 14:
                     //change background and text colour
                     this.BackColor = Color.Gray;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -571,7 +473,7 @@ namespace ChooseYourOwnAdventure
                 case 15:
                     //change background and text colour
                     this.BackColor = Color.Firebrick;
-                    whitetext();
+                    whiteText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -592,7 +494,7 @@ namespace ChooseYourOwnAdventure
                 case 16:
                     //change background and text colour
                     this.BackColor = Color.SandyBrown;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -623,7 +525,7 @@ namespace ChooseYourOwnAdventure
                 case 17:
                     //change background and text colour
                     this.BackColor = Color.Salmon;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     showb3();
@@ -645,7 +547,7 @@ namespace ChooseYourOwnAdventure
                 case 18:
                     //change background and text colour
                     this.BackColor = Color.LightSeaGreen;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -666,7 +568,7 @@ namespace ChooseYourOwnAdventure
                 case 19:
                     //change background and text colour
                     this.BackColor = Color.LightBlue;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -687,7 +589,7 @@ namespace ChooseYourOwnAdventure
                 case 20:
                     //change background and text colour
                     this.BackColor = Color.Purple;
-                    whitetext();
+                    whiteText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -708,7 +610,7 @@ namespace ChooseYourOwnAdventure
                 case 21:
                     //change background and text colour
                     this.BackColor = Color.GreenYellow;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -729,7 +631,7 @@ namespace ChooseYourOwnAdventure
                 case 22:
                     //change background and text colour
                     this.BackColor = Color.Plum;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     showb3();
@@ -751,7 +653,7 @@ namespace ChooseYourOwnAdventure
                 case 23:
                     //change background and text colour
                     this.BackColor = Color.DarkGreen;
-                    whitetext();
+                    whiteText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -772,7 +674,7 @@ namespace ChooseYourOwnAdventure
                 case 24:
                     //change background and text colour
                     this.BackColor = Color.PaleGreen;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -793,7 +695,7 @@ namespace ChooseYourOwnAdventure
                 case 25:
                     //change background and text colour
                     this.BackColor = Color.Orange;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -814,7 +716,7 @@ namespace ChooseYourOwnAdventure
                 case 26:
                     //change background and text colour
                     this.BackColor = Color.Orange;
-                    blacktext();
+                    blackText();
 
                     //change button 3 visibility based on whether or not there is an option 3
                     hideb3();
@@ -832,10 +734,10 @@ namespace ChooseYourOwnAdventure
                     option2Label.Text = "No";
 
                     break;
-                case 99:
+                case 99: //end game
                     //change background and text colour
                     this.BackColor = Color.Black;
-                    whitetext();
+                    whiteText();
 
                     //show image
                     imageBox.BackgroundImage = Properties.Resources.end;
@@ -846,7 +748,7 @@ namespace ChooseYourOwnAdventure
 
                     //display message
                     outputLabel.Text = "Thank you for playing. Play again next time... \n\nIF YOU DARE!";
-                    
+
                     //get rid of buttons and options
                     option1Label.Text = "";
                     option2Label.Text = "";
@@ -876,7 +778,7 @@ namespace ChooseYourOwnAdventure
             //show & enable buttons
             option1Button.Visible = true;
             option1Button.Enabled = true;
-            
+
             option2Button.Visible = true;
             option2Button.Enabled = true;
 
@@ -885,7 +787,7 @@ namespace ChooseYourOwnAdventure
             moretexttimer.Enabled = false;
         }
 
-        public void blacktext()
+        public void blackText()
         {
             //change all text to black
             outputLabel.ForeColor = Color.Black;
@@ -894,7 +796,7 @@ namespace ChooseYourOwnAdventure
             option3Label.ForeColor = Color.Black;
         }
 
-        public void whitetext()
+        public void whiteText()
         {
             //change all text to white
             outputLabel.ForeColor = Color.White;
@@ -917,5 +819,40 @@ namespace ChooseYourOwnAdventure
             option3Label.Visible = true;
         }
 
+        private void imageBox_Click(object sender, EventArgs e)
+        {
+            //get random number
+            Random random = new Random();
+            int randomColour = random.Next(1, 7);
+
+            //change text to white
+            outputLabel.ForeColor = Color.White;
+            option1Label.ForeColor = Color.White;
+            option2Label.ForeColor = Color.White;
+            option3Label.ForeColor = Color.White;
+
+            //change background colour
+            switch (randomColour)
+            {
+                case 1:
+                    this.BackColor = Color.Red;
+                    break;
+                case 2:
+                    this.BackColor = Color.OrangeRed;
+                    break;
+                case 3:
+                    this.BackColor = Color.Goldenrod;
+                    break;
+                case 4:
+                    this.BackColor = Color.Green;
+                    break;
+                case 5:
+                    this.BackColor = Color.Blue;
+                    break;
+                case 6:
+                    this.BackColor = Color.Purple;
+                    break;
+            }
+        }
     }
 }
